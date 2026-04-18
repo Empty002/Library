@@ -8,18 +8,46 @@
     <title>Library</title>
   </head>
   <body>
-    <navbar>
+    <div class="main-page">
+      <nav>
         <div class="nav-left"></div>
         <div class="nav-center">
-            <p class="nav-title">Library</p>
+          <p class="nav-title">Library</p>
         </div>
         <div class="nav-right">
-            <button id="add-book">Add a book</button>
+          <button id="open-button">Add a book</button>
         </div>
-    </navbar>
-    <main>
-        
-    </main>
-    <footer>Contact us</footer>
+      </nav>
+      <dialog id="add-book-dialog">
+        <p class="dialog-title">Add book</p>
+        <form method="dialog">
+          <input type="text" placeholder="Title" class="title-field" required />
+          <input
+            type="text"
+            placeholder="Author"
+            class="author-field"
+            required
+          />
+          <input
+            type="number"
+            placeholder="Pages"
+            class="pages-field"
+            required
+          />
+
+          Read? <input type="checkbox" class="read-checkbox" />
+
+          <button type="submit" id="submit-button">Add</button>
+          <button type="button" id="close-button">Cancel</button>
+        </form>
+      </dialog>
+      <main>
+        <div class="book-card">
+          <h2>AYAAA AYAAA YAAA</h2>
+          <p>Empty</p>
+        </div>
+      </main>
+      <footer>Contact us</footer>
+    </div>
   </body>
 </html>
